@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+background-color: #3a444e;
+box-sizing: border-box;
+height: 700px;
+}
+h1{
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+}
+p{
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+}
+.man{
+    position: relative;
+    height: 500px;
+}
+.none{
+     display: none; 
+} 
+div svg{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    
+}
+#wrong-letter{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+#word{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+}
+.letter{
+    display: inline-flex;
+    font-size: 30px;
+    margin: 0 3px;
+    height: 40px;
+    width: 25px;
+    border-bottom: 2px solid yellow;
+    text-align: center;
+    justify-content: center;
+
+}
+#popup-container{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+#popup{
+    background-color: rgb(95, 160, 165);
+    padding: 20px;
+    border-radius: 5px;
+}
+#popup button{
+    background-color: azure;
+    margin-left: 40px;
+    padding: 10px;
+}
+#message{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #3a444e;
+    color: white;
+
+}
+.wrletter{
+    color: white;
+    font-size: 20px;
+}
+.wrh2{
+    color: white;
+}
