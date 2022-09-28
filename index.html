@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Asmaca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HANGMAN</h1>
+        <p>Lütfen gizlenmiş kelimeyi bulmak için bir harf giriniz.</p>
+        <div class="man">
+            <svg width="500" height="300">
+                <!-- kafa -->
+                <circle cx="110" cy="80" r="20" stroke="white" stroke-width="2" fill="none" class="none"/>
+                <!-- gövde -->
+                <line id="govde" x1="110" y1="100" x2="110" y2="200" style="stroke:white; stroke-width:2" class="none"/>
+                <!-- kollar -->
+                <line id="kol1" x1="110" y1="150" x2="70" y2="130" style="stroke:white; stroke-width:2" class="none"/>
+                <line id="kol2" x1="110" y1="150" x2="150" y2="130" style="stroke:white; stroke-width:2" class="none"/>
+                <!-- bacaklar -->
+                <line id="leg1" x1="110" y1="200" x2="70" y2="230" style="stroke:white; stroke-width:2" class="none"/>
+                <line id="leg2" x1="110" y1="200" x2="150" y2="230" style="stroke:white; stroke-width:2" class="none"/>
+                <!-- sehpa -->
+                <line class="table" x1="110" y1="60" x2="110" y2="20" style="stroke:white; stroke-width:3" />
+                <line class="table" x1="110" y1="20" x2="20" y2="20" style="stroke:white; stroke-width:3" />
+                <line class="table" x1="20" y1="20" x2="20" y2="280" style="stroke:white; stroke-width:3" />
+                <line class="table" x1="0" y1="280" x2="40" y2="280" style="stroke:white; stroke-width:1" />
+            </svg>
+            <div id="wrong-letter">
+
+            </div>
+            <div id="word">
+
+            </div>
+            <div id="popup-container">
+                <div id="popup">
+                    <h3 id="succes-message">Tebrikler Kazandınız</h3>
+                    <button id="play-again">Tekrar Oyna</button>
+                </div>
+            </div>
+            <div id="message">
+                <p>Bu harfi zaten girdiniz!</p>
+            </div>
+
+
+
+        </div>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
