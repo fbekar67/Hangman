@@ -50,13 +50,14 @@ div svg{
     border-bottom: 2px solid yellow;
     text-align: center;
     justify-content: center;
+    color: white;
 
 }
 #popup-container{
     position: fixed;
     justify-content: center;
     align-items: center;
-    top: 50%;
+    top: 40%;
     left: 50%;
     display: none;
 }
